@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Inspirations from '@/components/Inspirations';
-import { ReactNode } from 'react';
 
 export default function InspirationGenerator() {
   const [index, setIndex] = useState(0);
@@ -11,8 +10,9 @@ export default function InspirationGenerator() {
 
   return (
     <>
-      <h3 className="text-[#FFC09F]">{quote}</h3>
-      <button onClick={next}>Inspire me again</button>
+      <button onClick={next} className='items-center text-primary cursor-pointer'>
+        {quote}
+      </button>
     </>
   );
 }

@@ -2,7 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 
 const Footer = () => {
     return (
-        <footer className='py-1 bg-slate-800 flex space-x-4'>
+        <footer className='py-1 bg-secondary flex space-x-4'>
             <div>{`© ${new Date().getFullYear()}`}</div>
             <div>{` • `}</div>
             <div>{siteMetadata.title}</div>
