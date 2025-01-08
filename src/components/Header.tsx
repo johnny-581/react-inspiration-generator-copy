@@ -1,10 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '@/data/get-inspired-logo.png';
 
 const Header = () => {
     return (
-        <header className='text-foreground justify-between py-2'>
+        <header className='flex justify-between text-foreground p-5'>
             <Link href="/">
-                <h1 className="font-bold">Get Inspired App</h1>
+                <Image
+                    src={logo}
+                    alt='get-inspired-logo'
+                    width={170}
+                    priority
+                />
             </Link>
         </header>
     );

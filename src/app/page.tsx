@@ -10,7 +10,7 @@ export default function InspirationGenerator() {
 
   return (
     <>
-      <button onClick={next} className='items-center text-primary cursor-pointer'>
+      <button onClick={next} className='items-center p-10 text-primary text-2xl cursor-pointer'>
         {quote}
       </button>
     </>
